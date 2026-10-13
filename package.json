@@ -1,0 +1,16 @@
+{
+  "name": "backendchapter2",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "javascript",
+    "Backend"
+  ],
+  "license": "ISC",
+  "author": "Surendra",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
