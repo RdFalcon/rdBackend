@@ -1,7 +1,9 @@
 // require('dotenv').config({path:"./env"})
 import dns from "node:dns";
-
+import express from "express";
 import dotenv from "dotenv";
+import app from "./app.js"
+
 
 import connectDB from "./db/index.js";
  dns.setServers(["8.8.8.8","4.2.2.2"]);
@@ -15,9 +17,10 @@ connectDB()
         console.log(`server start vaego this port ma : ${process.env.PORT}`)
     })
 } )
-.catch(error){
-    console.log("connection fail vaego",error);
-}
+.catch(function(error)
+{console.log("connection fail vaego",error);});
+    
+
 
 
 
