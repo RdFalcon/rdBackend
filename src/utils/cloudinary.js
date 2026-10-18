@@ -21,11 +21,11 @@ return response;
 
 }
 catch(error){
-    fs.unlinkSync(localFilePath) //remove the locally uploaded file if operation is failed 
+    try { fs.unlinkSync(localFilePath); } catch(_) {} // safely remove temp file if it exists
     return null;
 }
 
 
 }
 
-export {cloudinary};
+export {uploadOnCloudinary};

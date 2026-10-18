@@ -13,7 +13,7 @@ dotenv.config({
 })
 connectDB()
 .then(function(){
-    app.listen(process.env.port||8000,function(){
+    app.listen(process.env.PORT||8000,function(){
         console.log(`server start vaego this port ma : ${process.env.PORT}`)
     })
 } )
