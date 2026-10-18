@@ -37,6 +37,8 @@ console.log("password received:", Boolean(password));
         );
     }
 
+        console.log(req.files);
+
     const avatarLocalPath = req.files?.avatar?.[0]?.path;
     const coverImageLocalPath = req.files?.coverImage?.[0]?.path;
 

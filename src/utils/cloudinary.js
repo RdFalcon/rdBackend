@@ -16,6 +16,7 @@ if(!localFilePath) return null
 
 })
 console.log("file is upload safal vayo",response.url);
+fs.unlinkSync(localFilePath);
 return response;
 
 
